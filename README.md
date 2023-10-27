@@ -1,37 +1,39 @@
 # Colmar Academy
 
-Ce projet est une réalisation dans le cadre des exercices proposés par Codecademy. L'objectif est de concevoir un site web pour l'academy Colmar, une institution fictive.
+This project is a submission for a Codecademy assignment. The aim is to design a website for the fictitious Colmar Academy.
 
-![Screenshot du site]()
+![Website Screenshot]()
 
-## Technologies utilisées
+## Technologies Used
 
 - HTML5
 - CSS3
 
-## Fonctionnalités
+## Features
 
-- Page d'accueil présentant l'academy
-- Galerie des événements et activités
-- Section d'inscription et de contact
+- Homepage showcasing the academy
+- Events and activities gallery
+- Enrollment and contact section
 
 ## Installation
 
-1. Clonez le dépôt sur votre machine locale :
+1. Clone the repository to your local machine:
+
 ```bash
-git clone url_de_votre_dépôt
+git clone your_repository_url
 ```
-2. Ouvrez `index.html` dans votre navigateur pour visualiser le site.
 
-## Contribution
+2. Open `index.html` in your browser to view the site.
 
-Ce projet est principalement à des fins éducatives et n'est pas prévu pour des contributions majeures. Cependant, si vous avez des suggestions ou des améliorations, n'hésitez pas à ouvrir une issue ou à proposer une pull request.
+## Contributing
 
-## Crédits
+This project is primarily for educational purposes and isn't intended for major contributions. However, if you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
-- Conçu et développé par Bon-Lançon Benoit
-- Merci à Codecademy pour les directives et l'inspiration pour ce projet.
+## Credits
 
-## Licence
+- Designed and developed by [Your Name]
+- Thanks to Codecademy for the guidelines and inspiration for this project.
 
-Ce projet est sous licence MIT. Pour plus de détails, voir le fichier [LICENCE](url_vers_votre_fichier_licence)
+## License
+
+This project is licensed under the MIT License. For more details, see the [LICENSE]() file.

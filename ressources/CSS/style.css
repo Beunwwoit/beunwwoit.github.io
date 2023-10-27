@@ -1,0 +1,76 @@
+:root{
+    /* layout */
+    --navbar-height: 64px;
+    --navbar-padding: 24px;
+    --navbar-item-spacing: 16px;
+
+    /* typography */
+    --base-font-size: 1.3rem;
+    --logo-font-size: 1.5rem;
+
+    /* color and background */
+    --gray-color: #d8d8d8;
+    --main-font-color: #4a4a4a;
+}
+
+/* Layout */
+/* Sizing */
+/* Margin and spacing */
+/* Typography */
+/* color and background */
+/* Decoration */
+/* Transition and animation */
+/* Miscellaneous */
+
+html{
+    color: var(--main-font-color);
+    font-family: 'Lexend', Helvetica, sans-serif;
+}
+
+/* LOGO */
+.logo{
+    /* layout */
+    display: flex;
+    align-items: center;
+
+    /* style */
+    font-size: var(--logo-font-size);
+    text-transform: uppercase;
+}
+
+.logo-text .logo-bold{
+    /* typography */
+    font-weight: 700;
+}
+
+.logo-text .logo-grey{
+    /* color and backgroud */
+    color: grey;
+}
+
+/* NAVBAR */
+.navbar{
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* sizing */
+    padding: 0 var(--navbar-padding);
+
+    /* margin and spacing */
+    height: var(--navbar-height);
+}
+
+.navbar ul{
+    /* layout */
+    display: flex;
+
+    /* typography */
+    font-size: var(--base-font-size);
+}
+
+.navbar li{
+    /* margin and spacing */
+    margin-left: var(--navbar-item-spacing);
+}
