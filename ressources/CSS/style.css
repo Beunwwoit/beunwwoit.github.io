@@ -27,6 +27,68 @@ html{
     font-family: 'Lexend', Helvetica, sans-serif;
 }
 
+/* FONT */
+h1{
+    /* tipography */
+    font-size: 2.7vw;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2{
+    /* tipography */
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* GENERAL CLASS */
+.box-padding{
+    /* margin and spacing */
+    padding: 32px 24px;
+}
+
+.img-banner{
+    /* sizing */
+    width: 60%;
+    
+    /* decoration */
+    border-radius: 6px;
+}
+
+button{
+    /* sizing */
+    width: 80%;
+
+    /* decoration */
+    border-radius: 2px;
+    border: 3px solid transparent;
+
+    /* margin and spacing */
+    padding: 8px 0px;
+
+    /* tipography */
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+
+    /* color and background */
+    color: white;
+    background-color: var(--main-font-color);
+
+    /* transition and animation */
+    transition: all 0.4s;
+}
+
+button:hover{
+    /* decoration */
+    border: 3px solid var(--main-font-color);
+
+    /* color and background */
+    background-color: transparent;
+    color: var(--main-font-color);
+}
+
 /* LOGO */
 .logo{
     /* layout */
@@ -73,4 +135,43 @@ html{
 .navbar li{
     /* margin and spacing */
     margin-left: var(--navbar-item-spacing);
+}
+
+/* SECTION 1 */
+
+.learn_block{
+    /* layout */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    /* style */
+    background-color: var(--gray-color);
+
+}
+
+.text-spacing h1,
+.text-spacing h2,
+.text-spacing button{
+    margin: 15px 0px;
+}
+
+.text-spacing{
+    margin: 24px;
+}
+
+@media only screen and (max-width: 800px){
+    .img-banner{
+        width: 100%;
+    }
+
+    .learn_block{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text-spacing{
+        display: block;
+        margin: 32px 16px;
+    }
 }
