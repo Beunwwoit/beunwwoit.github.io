@@ -25,7 +25,7 @@
 /* Miscellaneous */
 
 html{
-    color: var(--main-font-color);
+    color: var(--main-font-color, black);
     font-family: 'Lexend', Helvetica, sans-serif;
 }
 
@@ -57,6 +57,10 @@ h2{
 .img-banner{
     /* sizing */
     width: 60%;
+}
+
+.mobil-menu{
+    display: none;
 }
 
 button{
@@ -117,8 +121,8 @@ button:hover{
 .navbar{
     /* layout */
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -169,6 +173,19 @@ button:hover{
 }
 
 @media only screen and (max-width: 800px){
+
+    .logo-text, .desktop-menu{
+        /* layout */
+        display: none;
+    }
+
+    .mobil-menu, .logo img{
+        /* layout */
+        display: block;
+
+        /* sizing */
+        height: 40px;
+    }
 
     .learn_block{
         /* layout */
