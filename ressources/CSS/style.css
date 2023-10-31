@@ -1,9 +1,9 @@
 :root{
     /* layout */
     --navbar-height: 64px;
+    --navbar-item-spacing: 16px;
     --middle-spacing: 24px;
     --hight-spacing: 32px;
-    --navbar-item-spacing: 16px;
 
     /* typography */
     --base-font-size: 1.3rem;
@@ -45,6 +45,7 @@ h2{
     font-weight: 500;
     line-height: 1.2;
 
+    /* margin and spacing */
     margin: var(--hight-spacing, 32px) 0;
 }
 
@@ -215,3 +216,4 @@ button:hover{
         background-color: #9b9b9b;
     }
 }
+
