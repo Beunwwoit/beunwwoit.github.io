@@ -13,6 +13,11 @@
     --white-color-background: #ffffff;
     --gray-color: #d8d8d8;
     --main-font-color: #4a4a4a;
+
+    /* image */
+    --image-card-1: url(../images/information-orientation.jpg);
+    --image-card-2: url(../images/information-campus.jpg);
+    --image-card-3: url(../images/information-guest-lecture.jpg);
 }
 
 /* Layout */
@@ -49,13 +54,27 @@ h2{
     margin: var(--hight-spacing, 32px) 0;
 }
 
+p{
+    font-size: calc(16px + 0.5vh);
+    font-weight: 300;
+    color: var(--main-font-color);
+    line-height: 1.5;
+}
+
+cite{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 45px;
+
+}
+
 /* GENERAL CLASS */
 .box-padding{
     /* margin and spacing */
     padding: var(--hight-spacing, 32px) var(--middle-spacing, 24px);
 }
 
-.img-banner{
+.img-banner{ 
     /* sizing */
     width: 60%;
 }
@@ -162,15 +181,79 @@ button:hover{
     display: flex;
     justify-content: left;
     align-items: center;
-    position: relative;
-    top: 64px;
 
     /* style */
     background-color: var(--gray-color);
+
+    margin-top: 64px;
 }
 
 .content-text{
     margin: var(--middle-spacing, 24px);
+}
+
+/* BLOC2 */
+
+.bloc2{
+    /* layout */
+    display: grid;
+    grid-template: 1fr / 60% 40%;
+}
+
+.practicing-block{
+    /* margin and spacing */
+    margin: 32px 0 32px 24px;
+}
+
+.practicing-block img{
+    /* sizing */
+    width: 100%;
+}
+
+.container-card{
+    border-left: 1px solid var(--gray-color);
+    /* margin and spacing */
+    margin: 16px 0 0 24px;
+}
+
+.card{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+
+.card:hover{
+    background-color: var(--gray-color);
+}
+
+.image-variante-1{
+    background: var(--image-card-1) no-repeat center / cover;
+}
+
+.image-variante-2{
+    background: var(--image-card-2) no-repeat center / cover;
+}
+
+.image-variante-3{
+    background: var(--image-card-3) no-repeat center / cover;
+}
+
+.picture-card{
+    aspect-ratio: 1/1;
+    width: 35%;
+    height: auto;
+}
+
+#text-card{
+    margin-left: 16px;
+    width: 65%;
+}
+
+#text-card h2,
+#text-card p, 
+#text-card a{
+    margin: 8px;
 }
 
 @media only screen and (max-width: 800px){
@@ -214,6 +297,5 @@ button:hover{
 
         /* style */
         background-color: #9b9b9b;
-    }
+    }    
 }
-
