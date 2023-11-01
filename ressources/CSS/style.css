@@ -378,11 +378,9 @@ button:hover{
 }
 
 .content-learning-card{
-    /* layout */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    /* layout */   
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
  .learning-card{
@@ -396,6 +394,7 @@ button:hover{
  }
 
  .test{
+    height: 50%;
     margin: 16px 16px 24px 16px;
  }
 
@@ -408,6 +407,35 @@ button:hover{
     margin: 16px 0;
  }
 
- @media only screen and (max-width: 800px){
-    
+ @media only screen and (max-width: 1000px){
+
+    .learning-card img, h4, p{
+        display: none;
+    }
+
+    .bloc3{
+        background-color: var(--white-color-background);
+        padding: unset;
+    }
+
+    .content-learning-card{
+        grid-template: repeat(6, 1fr) / 1fr;
+    }
+
+    .learning-card{
+        background-color: var(--gray-color);
+    }
+
+    .test h2, .test, .learning-card{
+        margin: unset;
+     }
+
+    .learning-card{
+        margin: 8px;
+    }
+
+    .test h2{
+        padding: 24px 16px;
+    }
+
  }
