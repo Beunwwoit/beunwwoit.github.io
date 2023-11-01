@@ -68,7 +68,7 @@ cite{
 
 }
 
-/* GENERAL CLASS */
+/* GENERAL CLASSE */
 .box-padding{
     /* margin and spacing */
     padding: var(--hight-spacing, 32px) var(--middle-spacing, 24px);
@@ -80,6 +80,7 @@ cite{
 }
 
 .mobil-menu{
+    /* layout */
     display: none;
 }
 
@@ -174,8 +175,7 @@ button:hover{
     margin-left: var(--navbar-item-spacing);
 }
 
-/* SECTION 1 Desktop et tablette*/
-
+/* BLOC 1 Desktop et tablette */
 .learn_block{
     /* layout */
     display: flex;
@@ -185,75 +185,12 @@ button:hover{
     /* style */
     background-color: var(--gray-color);
 
+    /* margin and spacing */
     margin-top: 64px;
 }
 
 .content-text{
     margin: var(--middle-spacing, 24px);
-}
-
-/* BLOC2 */
-
-.bloc2{
-    /* layout */
-    display: grid;
-    grid-template: 1fr / 60% 40%;
-}
-
-.practicing-block{
-    /* margin and spacing */
-    margin: 32px 0 32px 24px;
-}
-
-.practicing-block img{
-    /* sizing */
-    width: 100%;
-}
-
-.container-card{
-    border-left: 1px solid var(--gray-color);
-    /* margin and spacing */
-    margin: 16px 0 0 24px;
-}
-
-.card{
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    transition: background-color 0.4s;
-}
-
-.card:hover{
-    background-color: var(--gray-color);
-}
-
-.image-variante-1{
-    background: var(--image-card-1) no-repeat center / cover;
-}
-
-.image-variante-2{
-    background: var(--image-card-2) no-repeat center / cover;
-}
-
-.image-variante-3{
-    background: var(--image-card-3) no-repeat center / cover;
-}
-
-.picture-card{
-    aspect-ratio: 1/1;
-    width: 35%;
-    height: auto;
-}
-
-#text-card{
-    margin-left: 16px;
-    width: 65%;
-}
-
-#text-card h2,
-#text-card p, 
-#text-card a{
-    margin: 8px;
 }
 
 @media only screen and (max-width: 800px){
@@ -297,5 +234,125 @@ button:hover{
 
         /* style */
         background-color: #9b9b9b;
-    }    
+    }
+}
+
+/* BLOC2 Desktop et tablette */
+.bloc2{
+    /* layout */
+    display: grid;
+    grid-template: 1fr / 60% 40%;
+}
+
+.practicing-block{
+    /* margin and spacing */
+    margin: 32px 0 32px 24px;
+}
+
+.practicing-block img{
+    /* sizing */
+    width: 100%;
+}
+
+.container-card{
+    /* style */
+    border-left: 1px solid var(--gray-color);
+
+    /* margin and spacing */
+    margin: 16px 0 0 24px;
+}
+
+.card{
+    /* layout */
+    display: flex;
+    align-items: center;
+
+    /* margin & spacing */
+    padding: 16px;
+
+    /* transition */
+    transition: background-color 0.4s;
+}
+
+.card:hover{
+    /* color and background */
+    background-color: var(--gray-color);
+}
+
+.image-variante-1{
+    background: var(--image-card-1) no-repeat center / cover;
+}
+
+.image-variante-2{
+    background: var(--image-card-2) no-repeat center / cover;
+}
+
+.image-variante-3{
+    background: var(--image-card-3) no-repeat center / cover;
+}
+
+.picture-card{
+    /* sizing */
+    width: 35%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+#text-card{
+    /* sizing */
+    width: 65%;
+
+    /* margin and spacing */
+    margin-left: 16px;
+}
+
+#text-card h2,
+#text-card p, 
+#text-card a{
+    /* margin and spacing */
+    margin: 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+    :root{
+        --image-card-1: url(../images/information-orientation-mobile.jpg);
+        --image-card-2: url(../images/information-campus-mobile.jpg);
+        --image-card-3: url(../images/information-guest-lecture-mobile.jpg);
+    }
+
+    .practicing-block{
+        /* layout */
+        display: none;
+    }
+
+    .bloc2{
+        /* layout */
+        display: grid;
+        grid-template: 1fr / 1fr;
+    }
+
+    .container-card{
+        /* margin and spacing */
+        margin: 0;
+    }
+
+    .card{
+        /* layout */
+        flex-direction: column;
+    }
+
+    .picture-card{
+        /* sizing */
+        width: 100%;
+        height: auto;
+        aspect-ratio: unset;
+
+        /* margin and spacing */
+        padding-bottom: 40%;
+        }
+
+    #text-card{
+        /* sizing */
+        width: 100%;
+    }
 }
