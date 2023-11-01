@@ -11,7 +11,7 @@
 
     /* color and background */
     --white-color-background: #ffffff;
-    --gray-color: #d8d8d8;
+    --gray-color: #eaebec;
     --main-font-color: #4a4a4a;
 
     /* image */
@@ -52,6 +52,13 @@ h2{
 
     /* margin and spacing */
     margin: var(--hight-spacing, 32px) 0;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+
 }
 
 p{
@@ -356,3 +363,51 @@ button:hover{
         width: 100%;
     }
 }
+
+/* BLOC 3 */
+.bloc3{
+    /* margin and spacing */
+    padding: 32px 72px;
+
+    /* color and background */
+    background-color: var(--gray-color);
+}
+
+.bloc3 h1{
+    text-align: center;
+}
+
+.content-learning-card{
+    /* layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+ .learning-card{
+    background-color: white;
+    margin: 16px;
+ }
+
+ .learning-card img{
+    width: 100%;
+    height: auto;
+ }
+
+ .test{
+    margin: 16px 16px 24px 16px;
+ }
+
+ .test p,
+ .test h4{
+    margin: 8px 0;
+ }
+
+ .test h2{
+    margin: 16px 0;
+ }
+
+ @media only screen and (max-width: 800px){
+    
+ }
