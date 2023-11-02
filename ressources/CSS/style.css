@@ -18,6 +18,8 @@
     --image-card-1: url(../images/information-orientation.jpg);
     --image-card-2: url(../images/information-campus.jpg);
     --image-card-3: url(../images/information-guest-lecture.jpg);
+    --image-card-4: url(../images/thesis-fisma.jpg);
+    --image-card-5: url(../images/thesis-now-and-then.jpg);
 }
 
 /* Layout */
@@ -298,6 +300,14 @@ button:hover{
     background: var(--image-card-3) no-repeat center / cover;
 }
 
+.image-variante-4{
+    background: var(--image-card-4) no-repeat center / cover;
+}
+
+.image-variante-5{
+    background: var(--image-card-5) no-repeat center / cover;
+}
+
 .picture-card{
     /* sizing */
     width: 35%;
@@ -394,7 +404,6 @@ button:hover{
  }
 
  .test{
-    height: 50%;
     margin: 16px 16px 24px 16px;
  }
 
