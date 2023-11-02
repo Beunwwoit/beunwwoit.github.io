@@ -77,6 +77,11 @@ cite{
 
 }
 
+a{
+    color: #4a90e2;
+    text-decoration: none;
+}
+
 /* GENERAL CLASSE */
 .box-padding{
     /* margin and spacing */
@@ -337,7 +342,7 @@ button:hover{
         --image-card-3: url(../images/information-guest-lecture-mobile.jpg);
     }
 
-    .practicing-block{
+    .hide-mobile{
         /* layout */
         display: none;
     }
@@ -346,6 +351,8 @@ button:hover{
         /* layout */
         display: grid;
         grid-template: 1fr / 1fr;
+        border-bottom: 1.5px solid var(--gray-color);
+        padding-bottom: 32px;
     }
 
     .container-card{
@@ -372,6 +379,11 @@ button:hover{
         /* sizing */
         width: 100%;
     }
+
+    .practicing-block{
+        /* margin and spacing */
+        margin: 16px 0 24px;
+    }
 }
 
 /* BLOC 3 */
@@ -384,6 +396,7 @@ button:hover{
 }
 
 .bloc3 h1{
+    /* tipography */
     text-align: center;
 }
 
@@ -394,37 +407,46 @@ button:hover{
 }
 
  .learning-card{
+    /* color and background */
     background-color: white;
+
+    /* margin and spacing */
     margin: 16px;
  }
 
  .learning-card img{
+    /* sizing */
     width: 100%;
     height: auto;
  }
 
  .test{
+    /* margin and spacing */
     margin: 16px 16px 24px 16px;
  }
 
  .test p,
  .test h4{
+    /* margin and spacing */
     margin: 8px 0;
  }
 
  .test h2{
+    /* margin and spacing */
     margin: 16px 0;
  }
 
  @media only screen and (max-width: 1000px){
 
-    .learning-card img, .learning-card h4, .learning-card p{
+    .learning-card img, .learning-card h4,.learning-card p{
         display: none;
     }
 
     .bloc3{
         background-color: var(--white-color-background);
         padding: unset;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--gray-color);
     }
 
     .content-learning-card{
@@ -447,6 +469,10 @@ button:hover{
         padding: 24px 16px;
     }
 
+ }
+
+ .bloc5 h1{
+    text-align: center;
  }
 
  footer{
@@ -486,4 +512,3 @@ button:hover{
         border: unset;
     }
 }
- 
