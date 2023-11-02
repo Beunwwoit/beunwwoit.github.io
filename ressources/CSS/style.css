@@ -18,6 +18,8 @@
     --image-card-1: url(../images/information-orientation.jpg);
     --image-card-2: url(../images/information-campus.jpg);
     --image-card-3: url(../images/information-guest-lecture.jpg);
+    --image-card-4: url(../images/thesis-fisma.jpg);
+    --image-card-5: url(../images/thesis-now-and-then.jpg);
 }
 
 /* Layout */
@@ -298,6 +300,14 @@ button:hover{
     background: var(--image-card-3) no-repeat center / cover;
 }
 
+.image-variante-4{
+    background: var(--image-card-4) no-repeat center / cover;
+}
+
+.image-variante-5{
+    background: var(--image-card-5) no-repeat center / cover;
+}
+
 .picture-card{
     /* sizing */
     width: 35%;
@@ -394,7 +404,6 @@ button:hover{
  }
 
  .test{
-    height: 50%;
     margin: 16px 16px 24px 16px;
  }
 
@@ -409,7 +418,7 @@ button:hover{
 
  @media only screen and (max-width: 1000px){
 
-    .learning-card img, h4, p{
+    .learning-card img, .learning-card h4, .learning-card p{
         display: none;
     }
 
@@ -439,3 +448,42 @@ button:hover{
     }
 
  }
+
+ footer{
+    /* layout */
+    display: flex;
+
+    justify-content: space-between;
+
+    /* margin and spacing */
+    padding: 16px 24px 50px;
+
+    /* style */
+    border-top: 1.5px solid var(--gray-color);
+ }
+
+.footer-txt, .footer-link{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer-link{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-link:visited{
+    color: unset;
+}
+
+@media only screen and (max-width: 800px){
+    .txt-footer-right{
+        display: none;
+    }
+
+    footer{
+        padding: 16px;
+        border: unset;
+    }
+}
+ 
