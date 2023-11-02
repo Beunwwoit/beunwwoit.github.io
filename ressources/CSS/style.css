@@ -474,3 +474,41 @@ button:hover{
  .bloc5 h1{
     text-align: center;
  }
+
+ footer{
+    /* layout */
+    display: flex;
+
+    justify-content: space-between;
+
+    /* margin and spacing */
+    padding: 16px 24px 50px;
+
+    /* style */
+    border-top: 1.5px solid var(--gray-color);
+ }
+
+.footer-txt, .footer-link{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.footer-link{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-link:visited{
+    color: unset;
+}
+
+@media only screen and (max-width: 800px){
+    .txt-footer-right{
+        display: none;
+    }
+
+    footer{
+        padding: 16px;
+        border: unset;
+    }
+}
