@@ -214,15 +214,7 @@ button:hover{
         display: none;
     }
 
-    .mobil-menu, .logo img{
-        /* layout */
-        display: block;
-
-        /* sizing */
-        height: 40px;
-    }
-
-    .learn_block{
+    .mobil-menu, .logo img, .learn_block{
         /* layout */
         display: block;
     }
